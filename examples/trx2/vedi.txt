@@ -1,0 +1,29 @@
+ 
+/home/novello/zephyr3.7B/simplicity_sdk/platform/service/power_manager/src/sl_power_manager.c++++++++++++:226: undefined reference to `sl_clock_manager_enable_bus_clock'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: /home/novello/zephyr3.7B/simplicity_sdk/platform/service/power_manager/src/sl_power_manager.c:235: undefined reference to `SL_BUS_CLOCK_GPIO_VALUE'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: zephyr/libzephyr.a(sl_power_manager_hal_s2.c.obj): in function `EMU_EM23PostsleepHook':
+/home/novello/zephyr3.7B/simplicity_sdk/platform/service/power_manager/src/sl_power_manager_hal_s2.c++++++++++:521: undefined reference to `sli_sleeptimer_hal_is_int_status_set'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: zephyr/libzephyr.a(sl_sleeptimer.c.obj): in function `update_delta_list':
+/home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer !!!!!!!!!.c:1521: undefined reference to `sleeptimer_hal_get_counter'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: zephyr/libzephyr.a(sl_sleeptimer.c.obj): in function `set_comparator_for_next_timer':
+/home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c!!!!!!!!!!!!:1504: undefined reference to `sleeptimer_hal_enable_int'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: /home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:1505: undefined reference to `sleeptimer_hal_set_compare'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: /home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:1509: undefined reference to `sleeptimer_hal_enable_int'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: /home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:1510: undefined reference to `sleeptimer_hal_set_int'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: zephyr/libzephyr.a(sl_sleeptimer.c.obj): in function `create_timer':
+/home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c!!|!!!!!!!!!!!!!!:1574: undefined reference to `sleeptimer_hal_get_counter'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: /home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:1576: undefined reference to `sleeptimer_hal_get_counter'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: zephyr/libzephyr.a(sl_sleeptimer.c.obj): in function `sl_sleeptimer_init':
+/home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c!!!!!!!!!!!!:195: undefined reference to `sleeptimer_hal_init_timer'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: /home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:196: undefined reference to `sleeptimer_hal_enable_int'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: /home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:197: undefined reference to `sleeptimer_hal_get_timer_frequency'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: zephyr/libzephyr.a(sl_sleeptimer.c.obj): in function `sl_sleeptimer_stop_timer':
+/home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:!!!!!!!!!!!!!!!479: undefined reference to `sleeptimer_hal_disable_int'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: zephyr/libzephyr.a(sl_sleeptimer.c.obj): in function `sl_sleeptimer_get_remaining_time_of_first_timer':
+/home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:!!!!!!!!!!!!!!!!!!!!!!!!!!!579: undefined reference to `sleeptimer_hal_get_counter'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: /home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:578: undefined reference to `sleeptimer_hal_get_counter'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: zephyr/libzephyr.a(sl_sleeptimer.c.obj): in function `sl_sleeptimer_get_tick_count':
+/home/novello/zephyr3.7B/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer.c:!!!!!!!!!!!!!!!634: undefined reference to `sleeptimer_hal_get_counter'
+/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd: zephyr/drivers/counter/libdrivers__counter.a(counter_gecko_stimer.c.obj):(.intList+0x8): undefined reference to `SYSRTC_APP_IRQHandler'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: 

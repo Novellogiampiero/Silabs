@@ -1,0 +1,5 @@
+boards:
+  - name: fg23
+    socs:
+      - name: efr32fg23a010f512im48
+

@@ -1,0 +1,1399 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/zephyr_default.cmake:141 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      The target system is: Generic - 3.7.0 - arm
+      The host system is: Linux - 6.8.0-40-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/zephyr_default.cmake:141 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x28): undefined reference to `_exit'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x24): undefined reference to `_write'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0x18): undefined reference to `_close'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x24): undefined reference to `_read'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/zephyr_default.cmake:141 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/zephyr_default.cmake:141 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x28): undefined reference to `_exit'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x24): undefined reference to `_write'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0x18): undefined reference to `_close'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x24): undefined reference to `_read'
+      /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/zephyr_default.cmake:141 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/kernel.cmake:134 (enable_language)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules/zephyr_default.cmake:141 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/novello/zephyr3.7B/R5x_No/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc (Arm GNU Toolchain 12.2.Rel1 (Build arm-12.24)) 12.2.1 20221205
+      Copyright (C) 2022 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:64 (include)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_missing_declarations"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_c58ff
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -o CMakeFiles/cmTC_c58ff.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_c58ff.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_c58ff.a  CMakeFiles/cmTC_c58ff.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_c58ff.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:64 (include)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_unknown_attributes"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_e07df
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=unknown-attributes -o CMakeFiles/cmTC_e07df.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: CMakeFiles/cmTC_e07df.dir/simple-main.c.obj 
+        /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=unknown-attributes -o CMakeFiles/cmTC_e07df.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        cc1: error: '-Werror=unknown-attributes': no option '-Wunknown-attributes'; did you mean '-Wno-attributes'?
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:64 (include)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_attributes"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_ee387
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=attributes -o CMakeFiles/cmTC_ee387.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_ee387.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_ee387.a  CMakeFiles/cmTC_ee387.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_ee387.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:64 (include)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_unsupported_floating_point_opt"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_4ef6c
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=unsupported-floating-point-opt -o CMakeFiles/cmTC_4ef6c.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: CMakeFiles/cmTC_4ef6c.dir/simple-main.c.obj 
+        /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=unsupported-floating-point-opt -o CMakeFiles/cmTC_4ef6c.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        cc1: error: '-Werror=unsupported-floating-point-opt': no option '-Wunsupported-floating-point-opt'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:64 (include)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_ignored_optimization_argument"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_c8612
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=ignored-optimization-argument -o CMakeFiles/cmTC_c8612.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: CMakeFiles/cmTC_c8612.dir/simple-main.c.obj 
+        /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=ignored-optimization-argument -o CMakeFiles/cmTC_c8612.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        cc1: error: '-Werror=ignored-optimization-argument': no option '-Wignored-optimization-argument'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:64 (include)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_attribute_optimize"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_2b5f1
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=attribute-optimize -o CMakeFiles/cmTC_2b5f1.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: CMakeFiles/cmTC_2b5f1.dir/simple-main.c.obj 
+        /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=attribute-optimize -o CMakeFiles/cmTC_2b5f1.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        cc1: error: '-Werror=attribute-optimize': no option '-Wattribute-optimize'; did you mean '-Wattribute-alias'?
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:64 (include)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Wno_unused_command_line_argument"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_e49b5
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Wno-unused-command-line-argument -o CMakeFiles/cmTC_e49b5.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_e49b5.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_e49b5.a  CMakeFiles/cmTC_e49b5.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_e49b5.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:129 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_ALIAS_ATTRIBUTE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_90498
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_90498.dir/have-alias-attribute.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-alias-attribute.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_90498.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_90498.a  CMakeFiles/cmTC_90498.dir/have-alias-attribute.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_90498.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:132 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_ALLOC_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_caf39
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_caf39.dir/have-alloc-size.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-alloc-size.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_caf39.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_caf39.a  CMakeFiles/cmTC_caf39.dir/have-alloc-size.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_caf39.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:135 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_ATTRIBUTE_ALWAYS_INLINE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_445e8
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_445e8.dir/have-attribute-always-inline.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-attribute-always-inline.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_445e8.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_445e8.a  CMakeFiles/cmTC_445e8.dir/have-attribute-always-inline.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_445e8.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:138 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_ATTRIBUTE_GNU_INLINE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_beb7a
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_beb7a.dir/have-attribute-gnu-inline.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-attribute-gnu-inline.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_beb7a.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_beb7a.a  CMakeFiles/cmTC_beb7a.dir/have-attribute-gnu-inline.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_beb7a.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:141 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BITFIELDS_IN_PACKED_STRUCTS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_0f0e3
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_0f0e3.dir/have-bitfields-in-packed-structs.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-bitfields-in-packed-structs.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_0f0e3.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_0f0e3.a  CMakeFiles/cmTC_0f0e3.dir/have-bitfields-in-packed-structs.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_0f0e3.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:144 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_ALLOCA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_9eea0
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_9eea0.dir/have-builtin-alloca.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-alloca.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_9eea0.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_9eea0.a  CMakeFiles/cmTC_9eea0.dir/have-builtin-alloca.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_9eea0.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:147 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_COPYSIGN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_fdcfc
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_fdcfc.dir/have-builtin-copysign.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-copysign.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_fdcfc.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_fdcfc.a  CMakeFiles/cmTC_fdcfc.dir/have-builtin-copysign.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_fdcfc.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:150 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_COPYSIGNL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_015f5
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_015f5.dir/have-builtin-copysignl.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-copysignl.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_015f5.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_015f5.a  CMakeFiles/cmTC_015f5.dir/have-builtin-copysignl.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_015f5.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:153 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_CTZ"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_c0894
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_c0894.dir/have-builtin-ctz.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-ctz.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_c0894.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_c0894.a  CMakeFiles/cmTC_c0894.dir/have-builtin-ctz.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_c0894.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:156 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_CTZL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_c4eb5
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_c4eb5.dir/have-builtin-ctzl.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-ctzl.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_c4eb5.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_c4eb5.a  CMakeFiles/cmTC_c4eb5.dir/have-builtin-ctzl.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_c4eb5.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:159 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_CTZLL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_7f732
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_7f732.dir/have-builtin-ctzll.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-ctzll.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_7f732.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_7f732.a  CMakeFiles/cmTC_7f732.dir/have-builtin-ctzll.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_7f732.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:162 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_EXPECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_ecff0
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_ecff0.dir/have-builtin-expect.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-expect.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_ecff0.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_ecff0.a  CMakeFiles/cmTC_ecff0.dir/have-builtin-expect.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_ecff0.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:165 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_FFS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_20ad8
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_20ad8.dir/have-builtin-ffs.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-ffs.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_20ad8.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_20ad8.a  CMakeFiles/cmTC_20ad8.dir/have-builtin-ffs.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_20ad8.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:168 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_FFSL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_0f4c1
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_0f4c1.dir/have-builtin-ffsl.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-ffsl.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_0f4c1.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_0f4c1.a  CMakeFiles/cmTC_0f4c1.dir/have-builtin-ffsl.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_0f4c1.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:171 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_FFSLL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_1389a
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_1389a.dir/have-builtin-ffsll.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-ffsll.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_1389a.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_1389a.a  CMakeFiles/cmTC_1389a.dir/have-builtin-ffsll.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_1389a.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:174 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_FINITEL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_68a91
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_68a91.dir/have-builtin-finitel.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-finitel.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_68a91.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_68a91.a  CMakeFiles/cmTC_68a91.dir/have-builtin-finitel.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_68a91.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:177 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_ISFINITE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_5f5d6
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_5f5d6.dir/have-builtin-isfinite.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-isfinite.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_5f5d6.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_5f5d6.a  CMakeFiles/cmTC_5f5d6.dir/have-builtin-isfinite.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_5f5d6.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:180 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_ISINF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_6164f
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_6164f.dir/have-builtin-isinf.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-isinf.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_6164f.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_6164f.a  CMakeFiles/cmTC_6164f.dir/have-builtin-isinf.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_6164f.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:183 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_ISINFL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_1abd2
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_1abd2.dir/have-builtin-isinfl.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-isinfl.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_1abd2.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_1abd2.a  CMakeFiles/cmTC_1abd2.dir/have-builtin-isinfl.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_1abd2.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:186 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_ISNAN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_17de3
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_17de3.dir/have-builtin-isnan.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-isnan.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_17de3.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_17de3.a  CMakeFiles/cmTC_17de3.dir/have-builtin-isnan.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_17de3.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:189 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_ISNANL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_b6c8b
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_b6c8b.dir/have-builtin-isnanl.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-isnanl.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_b6c8b.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_b6c8b.a  CMakeFiles/cmTC_b6c8b.dir/have-builtin-isnanl.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_b6c8b.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:192 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_MUL_OVERFLOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_1ac25
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_1ac25.dir/have-builtin-mul-overflow.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-mul-overflow.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_1ac25.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_1ac25.a  CMakeFiles/cmTC_1ac25.dir/have-builtin-mul-overflow.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_1ac25.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:195 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_ADD_OVERFLOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_6685c
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_6685c.dir/have-builtin-add-overflow.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-add-overflow.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_6685c.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_6685c.a  CMakeFiles/cmTC_6685c.dir/have-builtin-add-overflow.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_6685c.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:198 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_CC_INHIBIT_LOOP_TO_LIBCALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_1ee97
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_1ee97.dir/have-cc-inhibit-loop-to-libcall.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-cc-inhibit-loop-to-libcall.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_1ee97.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_1ee97.a  CMakeFiles/cmTC_1ee97.dir/have-cc-inhibit-loop-to-libcall.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_1ee97.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:201 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_COMPLEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_6bd95
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_6bd95.dir/have-complex.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-complex.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_6bd95.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_6bd95.a  CMakeFiles/cmTC_6bd95.dir/have-complex.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_6bd95.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:204 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_BUILTIN_COMPLEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_0d1ee
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_0d1ee.dir/have-builtin-complex.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-builtin-complex.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_0d1ee.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_0d1ee.a  CMakeFiles/cmTC_0d1ee.dir/have-builtin-complex.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_0d1ee.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:207 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_FORMAT_ATTRIBUTE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_c82df
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_c82df.dir/have-format-attribute.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-format-attribute.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_c82df.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_c82df.a  CMakeFiles/cmTC_c82df.dir/have-format-attribute.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_c82df.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:210 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_WEAK_ATTRIBUTE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_c850c
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_c850c.dir/have-weak-attribute.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-weak-attribute.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_c850c.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_c850c.a  CMakeFiles/cmTC_c850c.dir/have-weak-attribute.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_c850c.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:224 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_LONG_DOUBLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_b1bd3
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_b1bd3.dir/have-long-double.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-long-double.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_b1bd3.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_b1bd3.a  CMakeFiles/cmTC_b1bd3.dir/have-long-double.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_b1bd3.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:151 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:227 (picolibc_flag)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_HAVE_NO_BUILTIN_ATTRIBUTE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_1ba0f
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_1ba0f.dir/have-no-builtin-attribute.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-no-builtin-attribute.c
+        FAILED: CMakeFiles/cmTC_1ba0f.dir/have-no-builtin-attribute.c.obj 
+        /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -o CMakeFiles/cmTC_1ba0f.dir/have-no-builtin-attribute.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-no-builtin-attribute.c
+        /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/have-no-builtin-attribute.c:1:1: error: 'no_builtin' attribute directive ignored [-Werror=attributes]
+            1 | static int __attribute__((no_builtin)) foo(int x) { return x + 1; }
+              | ^~~~~~
+        cc1: note: unrecognized command-line option '-Wno-unused-command-line-argument' may have been intended to silence earlier diagnostics
+        cc1: some warnings being treated as errors
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.15.1/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:485 (CHECK_INCLUDE_FILE)"
+    checks:
+      - "Looking for xtensa/config/core-isa.h"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/CMakeFiles/CMakeScratch/TryCompile-6wsRmL"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/CMakeFiles/CMakeScratch/TryCompile-6wsRmL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_XTENSA_HAVE_CONFIG_CORE_ISA_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/CMakeFiles/CMakeScratch/TryCompile-6wsRmL'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_89694
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -nostartfiles -nostdlib -isystem "/home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/include" -isystem "/home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -o CMakeFiles/cmTC_89694.dir/CheckIncludeFile.c.obj -c /home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/CMakeFiles/CMakeScratch/TryCompile-6wsRmL/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_89694.dir/CheckIncludeFile.c.obj 
+        /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -nostartfiles -nostdlib -isystem "/home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/include" -isystem "/home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -o CMakeFiles/cmTC_89694.dir/CheckIncludeFile.c.obj -c /home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/CMakeFiles/CMakeScratch/TryCompile-6wsRmL/CheckIncludeFile.c
+        /home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/CMakeFiles/CMakeScratch/TryCompile-6wsRmL/CheckIncludeFile.c:1:10: fatal error: xtensa/config/core-isa.h: No such file or directory
+            1 | #include <xtensa/config/core-isa.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_fno_common"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_3baeb
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -fno-common -o CMakeFiles/cmTC_3baeb.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_3baeb.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_3baeb.a  CMakeFiles/cmTC_3baeb.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_3baeb.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_fno_stack_protector"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_95fb2
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -fno-stack-protector -o CMakeFiles/cmTC_95fb2.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_95fb2.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_95fb2.a  CMakeFiles/cmTC_95fb2.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_95fb2.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_ffunction_sections"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_8490b
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -ffunction-sections -o CMakeFiles/cmTC_8490b.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_8490b.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_8490b.a  CMakeFiles/cmTC_8490b.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_8490b.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_fdata_sections"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_4e74a
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -fdata-sections -o CMakeFiles/cmTC_4e74a.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_4e74a.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_4e74a.a  CMakeFiles/cmTC_4e74a.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_4e74a.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_5b433
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -Wall -o CMakeFiles/cmTC_5b433.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_5b433.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_5b433.a  CMakeFiles/cmTC_5b433.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_5b433.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_a95cd
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -Wextra -o CMakeFiles/cmTC_a95cd.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_a95cd.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_a95cd.a  CMakeFiles/cmTC_a95cd.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_a95cd.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_implicit_function_declaration"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_fad61
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -Werror=implicit-function-declaration -o CMakeFiles/cmTC_fad61.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_fad61.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_fad61.a  CMakeFiles/cmTC_fad61.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_fad61.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_vla"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_b1180
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -Werror=vla -o CMakeFiles/cmTC_b1180.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_b1180.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_b1180.a  CMakeFiles/cmTC_b1180.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_b1180.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Warray_bounds"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_c0efd
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -Warray-bounds -o CMakeFiles/cmTC_c0efd.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_c0efd.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_c0efd.a  CMakeFiles/cmTC_c0efd.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_c0efd.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Wold_style_definition"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_bfdbd
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -Wold-style-definition -o CMakeFiles/cmTC_bfdbd.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_bfdbd.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_bfdbd.a  CMakeFiles/cmTC_bfdbd.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_bfdbd.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_frounding_math"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_ab2eb
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -frounding-math -o CMakeFiles/cmTC_ab2eb.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_ab2eb.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_ab2eb.a  CMakeFiles/cmTC_ab2eb.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_ab2eb.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/picolibc.cmake:134 (_picolibc_supported_compile_options)"
+      - "/home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/CMakeLists.txt:534 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/novello/zephyr3.7B/R5x_No/zephyr/cmake/modules"
+    buildResult:
+      variable: "_fsignaling_nans"
+      cached: true
+      stdout: |
+        Change Dir: '/home/novello/zephyr3.7B/R5x_No/autec-dir/samples/trx1/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.15.1/Ninja/bin/ninja -v cmTC_41e59
+        [1/2] /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Wno-unused-command-line-argument -fsignaling-nans -o CMakeFiles/cmTC_41e59.dir/simple-main.c.obj -c /home/novello/zephyr3.7B/R5x_No/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /opt/st/stm32cubeclt_1.15.1/CMake/bin/cmake -E rm -f libcmTC_41e59.a && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ar qc libcmTC_41e59.a  CMakeFiles/cmTC_41e59.dir/simple-main.c.obj && /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-ranlib libcmTC_41e59.a && :
+        
+      exitCode: 0
+...

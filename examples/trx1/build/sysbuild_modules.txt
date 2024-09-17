@@ -1,0 +1,1 @@
+"mcuboot":"/home/novello/zephyr3.7B/R5x_No/bootloader/mcuboot":"/home/novello/zephyr3.7B/R5x_No/bootloader/mcuboot/boot/zephyr/sysbuild"

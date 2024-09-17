@@ -1,0 +1,28 @@
+# Available runners configured by board.cmake.
+runners:
+- jlink
+
+# Default flash runner if --runner is not given.
+flash-runner: jlink
+
+# Default debug runner if --runner is not given.
+debug-runner: jlink
+
+# Common runner configuration values.
+config:
+  board_dir: /home/novello/zephyr3.7B/R5x_No/autec-dir/boards/silabs/autecradio
+  # Build outputs:
+  elf_file: zephyr.elf
+  hex_file: zephyr.hex
+  bin_file: zephyr.bin
+  # Host tools:
+  gdb: /home/novello/SimplicityStudio_v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/arm-none-eabi-gdb
+  openocd: /usr/bin/openocd
+  openocd_search:
+
+# Runner specific arguments
+args:
+  jlink:
+    - --dt-flash=y
+    - --device=EFR32ZG23BxxxF512
+    - --reset-after-load

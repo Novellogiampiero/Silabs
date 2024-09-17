@@ -1,0 +1,519 @@
+# 0 "/home/novello/zephyr3.7B/R5x_No/zephyr/misc/empty_file.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/home/novello/zephyr3.7B/R5x_No/autec-dir/boards/silabs/autecradio/autecradio.dts" 1
+
+
+
+
+
+
+/dts-v1/;
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23b020f512im48.dtsi" 1 3 4
+
+
+
+
+
+
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/common/mem.h" 1 3 4
+# 8 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23b020f512im48.dtsi" 2 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23.dtsi" 1 3 4
+
+
+
+
+
+
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/armv8-m.dtsi" 1 3 4
+
+
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/common/skeleton.dtsi" 1 3 4
+# 9 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/common/skeleton.dtsi" 3 4
+/ {
+ #address-cells = <1>;
+ #size-cells = <1>;
+ chosen { };
+ aliases { };
+};
+# 4 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/armv8-m.dtsi" 2 3 4
+
+/ {
+ soc {
+  #address-cells = <1>;
+  #size-cells = <1>;
+  compatible = "simple-bus";
+  interrupt-parent = <&nvic>;
+  ranges;
+
+  nvic: interrupt-controller@e000e100 {
+   #address-cells = <1>;
+   compatible = "arm,v8m-nvic";
+   reg = <0xe000e100 0xc00>;
+   interrupt-controller;
+   #interrupt-cells = <2>;
+  };
+
+  systick: timer@e000e010 {
+   compatible = "arm,armv8m-systick";
+   reg = <0xe000e010 0x10>;
+  };
+ };
+};
+# 8 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23.dtsi" 2 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
+# 9 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23.dtsi" 2 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/gpio_gecko.h" 1 3 4
+# 10 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23.dtsi" 2 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
+# 11 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23.dtsi" 2 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/pinctrl/gecko-pinctrl.h" 1 3 4
+# 12 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23.dtsi" 2 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/adc/adc.h" 1 3 4
+# 9 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/adc/adc.h" 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/dt-util.h" 1 3 4
+# 19 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/dt-util.h" 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_macro.h" 1 3 4
+# 34 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_macro.h" 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal.h" 1 3 4
+# 18 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_loops.h" 1 3 4
+# 1083 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_loops.h" 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_listify.h" 1 3 4
+# 1084 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_loops.h" 2 3 4
+# 19 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 162 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal_is_eq.h" 1 3 4
+# 163 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 193 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal_util_inc.h" 1 3 4
+# 194 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+
+
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal_util_dec.h" 1 3 4
+# 197 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+
+
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal_util_x2.h" 1 3 4
+# 200 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 35 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/sys/util_macro.h" 2 3 4
+# 20 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/dt-util.h" 2 3 4
+# 10 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/adc/adc.h" 2 3 4
+# 13 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23.dtsi" 2 3 4
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/common/freq.h" 1 3 4
+# 14 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23.dtsi" 2 3 4
+
+/ {
+ chosen {
+  zephyr,flash-controller = &msc;
+  zephyr,entropy = &se;
+ };
+
+ clocks {
+  clk_hfxo: clk-hfxo {
+   #clock-cells = <0>;
+   compatible = "silabs,hfxo";
+   clock-frequency = <((39) * 1000 * 1000)>;
+   ctune = <140>;
+   precision = <50>;
+  };
+ };
+
+ cpus {
+  #address-cells = <1>;
+  #size-cells = <0>;
+
+  cpu0: cpu@0 {
+   device_type = "cpu";
+   compatible = "arm,cortex-m33";
+   reg = <0>;
+   cpu-power-states = <&pstate_em1 &pstate_em2 &pstate_em3>;
+  };
+
+  power-states {
+
+
+
+
+   pstate_em1: em1 {
+    compatible = "zephyr,power-state";
+    power-state-name = "runtime-idle";
+    min-residency-us = <4>;
+
+    exit-latency-us = <2>;
+   };
+
+
+
+
+
+   pstate_em2: em2 {
+    compatible = "zephyr,power-state";
+    power-state-name = "suspend-to-idle";
+    min-residency-us = <260>;
+    exit-latency-us = <250>;
+   };
+
+
+
+
+
+
+
+   pstate_em3: em3 {
+    compatible = "zephyr,power-state";
+    power-state-name = "standby";
+    min-residency-us = <20000>;
+    exit-latency-us = <2000>;
+   };
+  };
+ };
+
+ sram0: memory@20000000 {
+  device_type = "memory";
+  compatible = "mmio-sram";
+ };
+
+ soc {
+  msc: flash-controller@50030000 {
+   compatible = "silabs,gecko-flash-controller";
+   reg = <0x50030000 0x3148>;
+   interrupts = <50 0>;
+
+   #address-cells = <1>;
+   #size-cells = <1>;
+
+   flash0: flash@0 {
+    compatible = "soc-nv-flash";
+    write-block-size = <4>;
+    erase-block-size = <8192>;
+   };
+  };
+ leuart1: leuart@4006a000 {
+   compatible = "silabs,gecko-leuart";
+   reg = <0x4006a000 0x400>;
+   interrupts = <25 0>;
+   peripheral-id = <0>;
+   status = "disabled";
+  };
+  usart0: usart@5005c000 {
+   compatible = "silabs,gecko-usart";
+   reg = <0x5005C000 0x306c>;
+   interrupts = <9 0>, <10 0>;
+   interrupt-names = "rx", "tx";
+   peripheral-id = <0>;
+   status = "disabled";
+  };
+
+  burtc0: burtc@50064000 {
+   compatible = "silabs,gecko-burtc";
+   reg = <0x50064000 0x3034>;
+   interrupts = <18 0>;
+   status = "disabled";
+  };
+
+  se: semailbox@5c021000 {
+   compatible = "silabs,gecko-semailbox";
+   reg = <0x5c021000 0x1000>;
+   status = "disabled";
+   interrupts = <64 3>, <65 3>, <66 3>;
+   interrupt-names = "SETAMPERHOST", "SEMBRX", "SEMBTX";
+  };
+
+  i2c0: i2c@5b000000 {
+   compatible = "silabs,gecko-i2c";
+   clock-frequency = <100000>;
+   #address-cells = <1>;
+   #size-cells = <0>;
+   reg = <0x5b000000 0x3044>;
+   interrupts = <28 0>;
+   status = "disabled";
+  };
+
+  stimer0: stimer@500a8000 {
+   compatible = "silabs,gecko-stimer";
+   reg = <0x500a8000 0x3054>;
+   interrupts = <67 0>;
+   clock-frequency = <32768>;
+   prescaler = <1>;
+   status = "disabled";
+  };
+
+  gpio: gpio@5003c000 {
+   compatible = "silabs,gecko-gpio";
+   reg = <0x5003c000 0x4000>;
+   interrupts = <27 2>, <26 2>;
+   interrupt-names = "GPIO_EVEN", "GPIO_ODD";
+
+   ranges;
+   #address-cells = <1>;
+   #size-cells = <1>;
+
+   gpioa: gpio@5003c030 {
+    compatible = "silabs,gecko-gpio-port";
+    reg = <0x5003c030 0x30>;
+    peripheral-id = <0>;
+    gpio-controller;
+    #gpio-cells = <2>;
+    status = "disabled";
+   };
+
+   gpiob: gpio@5003c060 {
+    compatible = "silabs,gecko-gpio-port";
+    reg = <0x5003c060 0x30>;
+    peripheral-id = <1>;
+    gpio-controller;
+    #gpio-cells = <2>;
+    status = "disabled";
+   };
+
+   gpioc: gpio@5003c090 {
+    compatible = "silabs,gecko-gpio-port";
+    reg = <0x5003c090 0x30>;
+    peripheral-id = <2>;
+    gpio-controller;
+    #gpio-cells = <2>;
+    status = "disabled";
+   };
+
+   gpiod: gpio@5003c0C0 {
+    compatible = "silabs,gecko-gpio-port";
+    reg = <0x5003c0C0 0x30>;
+    peripheral-id = <3>;
+    gpio-controller;
+    #gpio-cells = <2>;
+    status = "disabled";
+   };
+  };
+
+  wdog0: wdog@5b004000 {
+   compatible = "silabs,gecko-wdog";
+   reg = <0x5b004000 0x2C>;
+   peripheral-id = <0>;
+   interrupts = <42 0>;
+   status = "disabled";
+  };
+
+  wdog1: wdog@5b008000 {
+   compatible = "silabs,gecko-wdog";
+   reg = <0x5b008000 0x2C>;
+   peripheral-id = <1>;
+   interrupts = <43 0>;
+   status = "disabled";
+  };
+
+  adc0: adc@59004000 {
+   compatible = "silabs,gecko-iadc";
+   reg = <0x59004000 0x4000>;
+   interrupts = <49 0>;
+   status = "disabled";
+   #io-channel-cells = <1>;
+  };
+ };
+
+
+ bt_hci_silabs: bt_hci_silabs {
+  compatible = "silabs,bt-hci";
+  status = "disabled";
+ };
+};
+
+/ {
+ pinctrl: pin-controller {
+
+
+
+
+  compatible = "silabs,gecko-pinctrl";
+ };
+
+ hwinfo: hwinfo {
+  compatible = "silabs,gecko-hwinfo";
+  status = "disabled";
+ };
+
+};
+
+&nvic {
+ arm,num-irq-priority-bits = <4>;
+};
+# 9 "/home/novello/zephyr3.7B/R5x_No/zephyr/dts/arm/silabs/efr32zg23b020f512im48.dtsi" 2 3 4
+
+/ {
+ sram0: memory@20000000 {
+  reg = <0x20000000 ((64) * 1024)>;
+ };
+
+ soc {
+  compatible = "silabs,efr32fz23b020f512gm48",
+      "silabs,efr32zg23", "silabs,efr32",
+      "simple-bus";
+
+  flash-controller@50030000 {
+   flash0: flash@0 {
+    reg = <0 ((512) * 1024)>;
+   };
+  };
+ };
+};
+# 9 "/home/novello/zephyr3.7B/R5x_No/autec-dir/boards/silabs/autecradio/autecradio.dts" 2
+# 1 "/home/novello/zephyr3.7B/R5x_No/autec-dir/boards/silabs/autecradio/autecradio-pinctrl.dtsi" 1
+# 10 "/home/novello/zephyr3.7B/R5x_No/autec-dir/boards/silabs/autecradio/autecradio-pinctrl.dtsi"
+&pinctrl {
+ usart0_default: usart0_default {
+  group1 {
+   psels = <(((0 & 0xFFU) << 8U) | (((8) & 0xFFU) << 0U) | ((0U & 0xFFU) << 24U))>,
+    <(((0 & 0xFFU) << 8U) | (((9) & 0xFFU) << 0U) | ((1U & 0xFFU) << 24U))>,
+    <((((0) & 0xFFU) << 0U) | ((4U & 0xFFU) << 24U))>;
+  };
+ };
+};
+# 10 "/home/novello/zephyr3.7B/R5x_No/autec-dir/boards/silabs/autecradio/autecradio.dts" 2
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h" 1 3 4
+# 11 "/home/novello/zephyr3.7B/R5x_No/autec-dir/boards/silabs/autecradio/autecradio.dts" 2
+
+/ {
+ model = "Silicon Labs autecradio";
+ compatible = "silabs,autecradio", "silabs,efr32zg23";
+
+ chosen {
+  zephyr,console = &usart0;
+  zephyr,shell-uart = &usart0;
+  zephyr,sram = &sram0;
+  zephyr,flash = &flash0;
+  zephyr,code-partition = &slot0_partition;
+
+ };
+
+ aliases {
+  led0 = &led0;
+  led1 = &led1;
+  sw0 = &button0;
+  sw1 = &button1;
+  watchdog0 = &wdog0;
+ };
+
+ leds {
+  compatible = "gpio-leds";
+  led0: led_0 {
+   gpios = <&gpiob (4) (0 << 0)>;
+   label = "LED 0";
+  };
+  led1: led_1 {
+   gpios = <&gpiob (0) (0 << 0)>;
+   label = "LED 1";
+  };
+ };
+
+ buttons {
+  compatible = "gpio-keys";
+  button0: button_0 {
+   gpios = <&gpiob (1) (1 << 0)>;
+   label = "User Push Button 0";
+   zephyr,code = <11>;
+  };
+  button1: button_1 {
+   gpios = <&gpiob (3) (1 << 0)>;
+   label = "User Push Button 1";
+   zephyr,code = <2>;
+  };
+ };
+
+ wake_up_trigger: gpio-wake-up {
+  compatible = "silabs,gecko-wake-up-trigger";
+  gpios = <&gpioa (5) (1 << 0)>;
+ };
+
+ sensor_enable: gpio_switch_0 {
+  compatible = "regulator-fixed";
+  regulator-name = "sensor_enable";
+  enable-gpios = <&gpioc (9) (0 << 0)>;
+  regulator-boot-on;
+ };
+};
+
+&cpu0 {
+ clock-frequency = <39000000>;
+};
+
+&pstate_em3 {
+
+};
+
+&usart0 {
+ current-speed = <115200>;
+ pinctrl-0 = <&usart0_default>;
+ pinctrl-names = "default";
+ status = "okay";
+};
+
+
+&gpio {
+ location-swo = <0>;
+ status = "okay";
+};
+
+&gpioa {
+ status = "okay";
+};
+
+&gpiob {
+ status = "okay";
+};
+
+&gpioc {
+ status = "okay";
+};
+
+&gpiod {
+ status = "okay";
+};
+
+&wdog0 {
+ status = "okay";
+};
+
+&se {
+ status = "okay";
+};
+
+&flash0 {
+ partitions {
+  compatible = "fixed-partitions";
+  #address-cells = <1>;
+  #size-cells = <1>;
+
+
+  boot_partition: partition@0 {
+   label = "mcuboot";
+   reg = <0x0 0x0000c000>;
+   read-only;
+  };
+
+
+  slot0_partition: partition@c000 {
+   label = "image-0";
+   reg = <0x0000c000 0x00074000>;
+  };
+
+
+  slot1_partition: partition@80000 {
+   label = "image-1";
+   reg = <0x00080000 0x00074000>;
+  };
+
+
+  scratch_partition: partition@f4000 {
+   label = "image-scratch";
+   reg = <0x000f4000 0x00008000>;
+  };
+
+
+  storage_partition: partition@fc000 {
+   label = "storage";
+   reg = <0x000fc000 0x00084000>;
+  };
+ };
+};
+# 0 "<command-line>" 2
+# 1 "/home/novello/zephyr3.7B/R5x_No/zephyr/misc/empty_file.c"

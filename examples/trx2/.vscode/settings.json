@@ -1,0 +1,16 @@
+{
+  "BOARD": "decawave_dwm1001_dev",
+  "PROJECT": "/home/novello/autec_work/autec-dir/uwb-samples/02_listener",
+  "git.ignoreLimitWarning": true,
+  "nrf-connect.applications": [
+    "${workspaceFolder}"
+  ],
+  "nrf-connect.toolchain.path": "PATH",
+  "files.exclude": {
+    "**/*/adapters/**/index.ts": true
+  },
+  "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
+  "files.associations": {
+    "sx12xx_common.h": "c"
+  }
+}

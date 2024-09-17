@@ -1,0 +1,5 @@
+board:
+  name: wl55jc
+  vendor: st
+  socs:
+    - name: stm32wl55xx

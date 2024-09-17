@@ -1,0 +1,374 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug native_posix",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/zephyr/zephyr.elf",
+            "args": ["--bt-dev=hci0"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "asRoot": true, 
+            "console": "integratedTerminal",
+            "asRoot": true,   
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "vmArgs" : "--bt-dev=hci0",
+                    "ignoreFailures": true
+                    
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+                "name": "(gdb) Attach",
+                "type": "cppdbg",
+                "request": "attach",
+                "program": "${workspaceFolder}/build/zephyr/zephyr.elf",
+                "processId":"${command:pickProcess}",
+				"asRoot": true,
+				"stopAtEntry": false,
+				"processName":"/build/zephyr/zephyr.exe",
+				"environment": [],
+				"externalConsole": true,
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/bin/gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ]
+            },
+        {
+			"type": "cortex-debug",
+			"request": "launch",
+			"servertype": "stlink",
+			"cwd": "${workspaceRoot}",
+			"executable": "build/zephyr/zephyr.elf",
+			"name": "zephyr STM32WL55JC_M4",
+			"device": "STM32WLEx",
+			"interface":"swd",
+			"serialNumber": "0031000B4741500320383733",
+			"showDevDebugOutput": "both",
+			"runToEntryPoint": "main",
+			"serverArgs": ["-m","0"],
+			"toolchainPrefix": "arm-zephyr-eabi",
+			"armToolchainPath": "/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin",
+			"svdFile": "/home/novello/STMicroelectronics/STM32Cube/STM32CubeProgrammer/SVD/STM32WL5x_CM4.svd"	
+		},
+		{
+			"type": "cortex-debug",
+			"request": "launch",
+			"servertype": "openocd",
+			"cwd": "${workspaceRoot}",
+			"executable": "build/zephyr/zephyr.elf",
+			"name": "zephyr STM32F746ZG",
+			"device": "STM32F746ZG",
+			"configFiles": [
+ 				"zephyr/boards/arm/nucleo_f746zg/support/openocd.cfg"
+					]
+		},
+		{
+			"type": "cortex-debug",
+			"request": "launch",
+			"servertype": "openocd",
+			"cwd": "${workspaceRoot}",
+			"executable": "build/zephyr/zephyr.elf",
+			"name": "zephyr STM32F072B",
+			"device": "STM32F072B",
+			"configFiles": [
+ 				"zephyr/boards/arm/stm32f072b_disco/support/openocd.cfg"
+					]
+		},
+		{
+			"name": "Debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/build/zephyr/zephyr.elf",
+			"cwd": "${workspaceFolder}",
+			"miDebuggerPath": "/home/novello/zephyr-sdk-0.14.1/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gdb",
+			"preLaunchTask": "openocd",
+			"setupCommands": [
+				{
+					"text": "target extended-remote :3333"
+				},
+				{
+					"text": "mon reset halt"
+				},
+				{
+					"text": "thb main"
+				},
+				{
+					"text": "flushregs"
+				}
+			],
+		},
+		{
+			"name": "Debug(JLink-NORDIC)",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/zephyr/zephyr.elf",
+			"args": [],
+			"stopAtEntry": true,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"type": "cortex-debug",
+			"servertype": "jlink",
+			//"device": "EFR32BG13PxxxF512",
+			"device":"NRF52",
+			///"device":"RV32"
+			"interface": "swd",
+			"executable": "./build/zephyr/zephyr.elf",
+			"serverpath": "/usr/bin/JLinkGDBServerCLExe",
+			"armToolchainPath": "/home/novello/gnuarmemb/bin",
+			"runToMain": true,
+			"toolchainPrefix": "arm-zephyr-eabi",
+			"armToolchainPath": "/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin",
+			////"miDebuggerServerAddress": "localhost:3333",
+			//"preLaunchTask": "openocd flash and attach",
+			///"postDebugTask": "remove openocd attach",
+			////"serialNumber": "/dev/ttyACM0", //If you have more than one J-Link probe, add the serial number here.
+			//"jlinkscript":"${workspaceRoot}/BSP/SEGGER/K66FN2M0_emPower/Setup/Kinetis_K66_Target.js",
+			//////"runToEntryPoint":true,
+			"svdFile":"/home/novello/zephyr3.1/autec-work/modules/hal/nordic/nrfx/mdk/nrf52840.svd"
+			//"svdFile":"${workspaceRoot}/SVD/MK66F18.svd"
+			///miDebuggerPath": "/home/novello/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+			},
+			{
+			"name": "Debug(JLink-SILABS22)",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/zephyr/zephyr.elf",
+			"args": [],
+			"stopAtEntry": true,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"type": "cortex-debug",
+			"servertype": "jlink",
+			"device":"EFR32BG22C224F512IM40",
+			///"device":"RV32"
+			"interface": "swd",
+			"executable": "./build/zephyr/zephyr.elf",
+			"serverpath": "/usr/bin/JLinkGDBServerCLExe",
+			"armToolchainPath": "/home/novello/gnuarmemb/bin",
+			////"miDebuggerServerAddress": "localhost:3333",
+			//"preLaunchTask": "openocd flash and attach",
+			///"postDebugTask": "remove openocd attach",
+			////"serialNumber": "/dev/ttyACM0", //If you have more than one J-Link probe, add the serial number here.
+			//"jlinkscript":"${workspaceRoot}/BSP/SEGGER/K66FN2M0_emPower/Setup/Kinetis_K66_Target.js",
+			"runToMain": true,
+			"svdFile":"/home/novello/zephyr3.1/autec-work/modules/hal/nordic/nrfx/mdk/nrf52840.svd"
+			//"svdFile":"${workspaceRoot}/SVD/MK66F18.svd"
+			///miDebuggerPath": "/home/novello/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+			},
+			{
+			"name": "Debug(JLink-SILABS24)",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/zephyr/zephyr.elf",
+			"args": [],
+			"stopAtEntry": true,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"type": "cortex-debug",
+			"servertype": "jlink",
+			"device":"EFR32MG24BxxxF1536",
+			"interface": "swd",
+			"executable": "./build/zephyr/zephyr.elf",
+			"serverpath": "/usr/bin/JLinkGDBServerCLExe",
+			"armToolchainPath": "/home/novello/gnuarmemb/bin",
+			////"miDebuggerServerAddress": "localhost:3333",
+			//"preLaunchTask": "openocd flash and attach",
+			///"postDebugTask": "remove openocd attach",
+			////"serialNumber": "/dev/ttyACM0", //If you have more than one J-Link probe, add the serial number here.
+			//"jlinkscript":"${workspaceRoot}/BSP/SEGGER/K66FN2M0_emPower/Setup/Kinetis_K66_Target.js",
+			"runToMain": true,
+			"svdFile":"/home/novello/zephyr3.1/autec-work/modules/hal/nordic/nrfx/mdk/nrf52840.svd"
+			//"svdFile":"${workspaceRoot}/SVD/MK66F18.svd"
+			///miDebuggerPath": "/home/novello/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+			},
+			{
+			"name": "Debug(JLink-NXP)",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/zephyr/zephyr.elf",
+			"args": [],
+			"stopAtEntry": true,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"type": "cortex-debug",
+			"servertype": "jlink",
+			//"device": "MCIMXRT1052", STM32WL55JC_M4
+			"device": "EFR32FG28BXXXF1024" ,////"STM32WL55JC_M4",
+			///"device":"EFR32MG24BxxxF1536"
+			//"device": "EFR32FG23BXXXF512" ,////"STM32WL55JC_M4",
+			"executable": "./build/zephyr/zephyr.elf",
+			"serverpath": "/usr/bin/JLinkGDBServerCLExe",
+			"armToolchainPath": "/home/novello/gnuarmemb/bin",
+			"runToMain": true,
+			"toolchainPrefix": "arm-zephyr-eabi",
+			"armToolchainPath": "/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin",
+			//"device": "EFR32MG21A020F1024IM32",
+			//"device":"NRF52",
+			///"device":"RV32"
+			"interface": "swd",
+			"runToMain": true,
+			///"svdFile":"/home/novello/zephyr3.1/autec-work/modules/hal/nordic/nrfx/mdk/nrf52840.svd"
+			///miDebuggerPath": "/home/novello/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+			},
+			{
+			"name": "Debug(JLink-EFR32FG28)",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/zephyr/zephyr.elf",
+			"args": [],
+			"stopAtEntry": true,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"type": "cortex-debug",
+			"servertype": "jlink",
+			//"device": "MCIMXRT1052", STM32WL55JC_M4
+			"device": "EFR32FG28BXXXF1024" ,////"STM32WL55JC_M4",
+			///"device":"EFR32MG24BxxxF1536"
+			//"device": "EFR32FG23BXXXF512" ,////"STM32WL55JC_M4",
+			"executable": "./build/zephyr/zephyr.elf",
+			"serverpath": "/usr/bin/JLinkGDBServerCLExe",
+			"armToolchainPath": "/home/novello/gnuarmemb/bin",
+			"runToMain": true,
+			"toolchainPrefix": "arm-zephyr-eabi",
+			"armToolchainPath": "/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin",
+			//"device": "EFR32MG21A020F1024IM32",
+			//"device":"NRF52",
+			///"device":"RV32"
+			"interface": "swd",
+			"runToMain": true,
+			///"svdFile":"/home/novello/zephyr3.1/autec-work/modules/hal/nordic/nrfx/mdk/nrf52840.svd"
+			///miDebuggerPath": "/home/novello/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+			},
+			{
+			"name": "Debug(JLink-EFR32FG23)",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/zephyr/zephyr.elf",
+			"args": [],
+			"stopAtEntry": true,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"type": "cortex-debug",
+			"servertype": "jlink",
+			//"device": "MCIMXRT1052", STM32WL55JC_M4
+			"device": "EFR32FG23AXXXF512" ,////"STM32WL55JC_M4",
+			///"device":"EFR32MG24BxxxF1536"
+			//"device": "EFR32FG23BXXXF512" ,////"STM32WL55JC_M4",
+			"executable": "./build/zephyr/zephyr.elf",
+			"serverpath": "/usr/bin/JLinkGDBServerCLExe",
+			"armToolchainPath": "/home/novello/gnuarmemb/bin",
+			"runToMain": true,
+			"toolchainPrefix": "arm-zephyr-eabi",
+			"armToolchainPath": "/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin",
+			//"device": "EFR32MG21A020F1024IM32",
+			//"device":"NRF52",
+			///"device":"RV32"
+			"interface": "swd",
+			"runToMain": true,
+			///"svdFile":"/home/novello/zephyr3.1/autec-work/modules/hal/nordic/nrfx/mdk/nrf52840.svd"
+			///miDebuggerPath": "/home/novello/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+			},
+			{
+            "name": "Cortex Debug Renode",
+            "cwd": "${workspaceFolder}",
+            "executable": "./test1.elf",
+            "program": "${workspaceRoot}/build/zephyr/zephyr.elf",
+			"args": [],
+            #"device": "STM32F429x",
+            "device":"NRF52",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "external",
+            "gdbTarget": "localhost:3333",
+            "toolchainPrefix": "arm-none-eabi-",
+            "gdbPath": "arm-none-eabi-gdb",
+            "showDevDebugOutput": "raw",
+            "overrideLaunchCommands": ["monitor start", "continue"],
+            "overrideRestartCommands": ["monitor pause","monitor runMacro $reset"],
+            "postStartSessionCommands": ["break main"]
+        },
+           {
+        "name": "zephyr STM32wl",
+        "type": "cortex-debug",
+        "request": "launch",
+		"toolchainPrefix": "arm-zephyr-eabi",
+		#"svdFile": "/home/novello/zephyr3.6/R54-Autec/zephyrproject/zephyr_vscode_workspace/stm32_svd/STM32WL5x_CM4.svd",
+		"armToolchainPath": "/home/novello/zephyr-sdk-0.16.5/arm-zephyr-eabi/bin",
+        "servertype": "stutil",
+        "cwd": "${workspaceRoot}",
+        "executable": "${workspaceRoot}/build/zephyr/zephyr.elf",
+		"svdPath":"/home/novello/zephyr3.6/st/STM32WL5x_CM4.svd",
+        "device": "STM32WLE5JC",
+		"runToEntryPoint": "main",
+		"serialNumber": "",
+		"v1": false,
+		"showDevDebugOutput": "both",
+        "interface": "swd",
+		"serverArgs": ["-m","0"],
+        },
+			
+    ]
+}

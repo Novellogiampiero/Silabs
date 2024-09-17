@@ -1,0 +1,21 @@
+identifier: autecradio
+name: zg23
+type: mcu
+arch: arm
+ram: 256
+flash: 512
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - counter
+  - gpio
+  - uart
+  - watchdog
+testing:
+  ignore_tags:
+    - net
+    - bluetooth
+    - pm
+    - hwinfo
+vendor: silabs

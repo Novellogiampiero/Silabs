@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2019 Steven Lemaire
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <mem.h>
+#include <silabs/efr32fg23.dtsi>
+
+/ {
+	sram0: memory@20000000 {
+		reg = <0x20000000 DT_SIZE_K(256)>;
+	};
+
+	soc {
+		compatible = "silabs,efr32fg23a010f512im48",
+					 "silabs,efr32fg23", "silabs,efr32",
+					 "simple-bus";
+
+		flash-controller@50030000 {
+			flash0: flash@0 {
+				reg = <0 DT_SIZE_K(512)>;
+			};
+		};
+	};
+};

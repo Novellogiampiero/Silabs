@@ -1,0 +1,5 @@
+boards:
+  - name: fg2x
+    socs:
+      - name: efr32fg28b312f1024im64
+
